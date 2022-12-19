@@ -1,5 +1,14 @@
 /* ==========Global========== */
 
+@font-face {
+    font-family:"sans";
+    src: url(../fonts/NotoSans-Black.ttf);
+}
+
+.sansFont{
+    font-family: "sans",sans-serif;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -41,4 +50,66 @@ article{
 button{
     background-color:white;
     border: 0px;
+}
+
+
+/* ==========data========== */
+
+
+/* ----------temperature---------- */
+
+.temperature{
+    font-size: 25px;
+}
+
+.temperature::after{
+    content:"°C";
+}
+
+/* ----------feels like temperature---------- */
+
+.feelsLikeTemp{
+    font-size: 17px;
+}
+
+.feelsLikeTemp::after{
+    content:"°C";
+}
+
+.feelsLikeTemp::before{
+    content: "Feels like ";
+    font-size: 15px;
+}
+
+.humidity{
+    font-size: 15px;
+}
+
+.humidity::after{
+    content:"%"
+}
+
+.humidity::before{
+    content:"humidity "
+}
+
+.windSpeed{
+    font-size: 15px;
+}
+
+.windSpeed::before{
+    content:"windspeed "
+}
+
+.windSpeed::after{
+    content:" Km/h"
+}
+
+
+
+.searchBar{
+    padding:5px;
+    padding-left: 15px;
+    font-size: 15px;
+    
 }
