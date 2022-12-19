@@ -1,0 +1,44 @@
+/* ==========Global========== */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+article{
+    border: 1px solid black;
+    height: 500px;
+    width: 700px;
+    padding:15px;
+    padding-left: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    border-radius: 20px;
+}
+
+.input{
+    padding-top: 30px;
+}
+
+.searchBar{
+    border: 1px solid black;
+    border-radius: 20px;
+    height: 40px;
+    width: 500px;
+    margin-bottom: 50px;;
+}
+
+.locationTempContainer{
+    margin-bottom: 50px;
+}
+.location{
+    margin-bottom: 20px;
+}
+
+button{
+    background-color:white;
+    border: 0px;
+}
