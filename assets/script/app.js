@@ -9,10 +9,11 @@ const cityName = "berlin"
 
 
 /* ----------fetch for [current].temp_c---------- */
+/* ----------data in class ---------- */
 
 fetch(`http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${cityName}&aqi=no`)
     .then(response => response.json())
-    .then(data => console.log(data["current"].temp_c));
+    .then(data => document.querySelector(".temperature").innerHTML = (data["current"].temp_c));
 
 
 /* ----------fetch for [location].feelslike_c---------- */
@@ -48,3 +49,5 @@ fetch(`http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${cityName}&aqi
 fetch(`http://api.weatherapi.com/v1/current.json?key=52fbfc06f33445f7b8e183116221912&q=${cityName}&aqi=no`)
     .then(response => response.json())
     .then(data => console.log(data["current"].wind_kph));
+
+
