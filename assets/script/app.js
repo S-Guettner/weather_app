@@ -9,7 +9,7 @@ const cityName = "berlin"
 
 
 /* ----------fetch for [current].temp_c---------- */
-/* ----------data in class ---------- */
+/* ----------data in class temperature---------- */
 
 fetch(`http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${cityName}&aqi=no`)
     .then(response => response.json())
@@ -17,37 +17,42 @@ fetch(`http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${cityName}&aqi
 
 
 /* ----------fetch for [location].feelslike_c---------- */
+/* ----------data in class feelsLikeTemp---------- */
 
 fetch(`http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=London&aqi=no`)
     .then(response => response.json())
-    .then(data => console.log(data["current"].feelslike_c));
+    .then(data =>  document.querySelector(".feelsLikeTemp").innerHTML=(data["current"].feelslike_c));
 
 
 /* ----------fetch for [location].name (name of City)---------- */
+/* ----------data in class location---------- */
 
 fetch(`http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${cityName}&aqi=no`)
     .then(response => response.json())
-    .then(data => console.log(data["location"].name));
+    .then(data => document.querySelector(".location").innerHTML=(data["location"].name));
 
 
 /* ----------fetch for [location].localtime---------- */
+/* ----------data in class localTime---------- */
 
 fetch(`http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${cityName}&aqi=no`)
     .then(response => response.json())
-    .then(data => console.log(data["location"].localtime));
+    .then(data => document.querySelector(".localTime").innerHTML=(data["location"].localtime));
 
 
 /* ----------fetch for [current].humidity---------- */
+/* ----------data in class humidity---------- */
 
 fetch(`http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${cityName}&aqi=no`)
     .then(response => response.json())
-    .then(data => console.log(data["current"].humidity));
+    .then(data => document.querySelector(".humidity").innerHTML=(data["current"].humidity));
 
 
 /* ----------fetch for [current].wind_kph---------- */
+/* ----------data in class windSpeed---------- */
 
-fetch(`http://api.weatherapi.com/v1/current.json?key=52fbfc06f33445f7b8e183116221912&q=${cityName}&aqi=no`)
+fetch(`http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${cityName}&aqi=no`)
     .then(response => response.json())
-    .then(data => console.log(data["current"].wind_kph));
+    .then(data => document.querySelector(".windSpeed").innerHTML=(data["current"].wind_kph));
 
 
