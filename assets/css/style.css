@@ -2,7 +2,12 @@
 
 @font-face {
     font-family:"sans";
-    src: url(../fonts/NotoSans-Black.ttf);
+    src: url(../fonts/notosans/NotoSans-Black.ttf);
+}
+
+@font-face {
+    font-family: "sans-medium";
+    src: url(../fonts/notosans/NotoSans-Medium.ttf);
 }
 
 .sansFont{
@@ -28,17 +33,50 @@ article{
     border-radius: 20px;
 }
 
-.input{
-    padding-top: 30px;
-}
+
+/* ----------searchbar---------- */
 
 .searchBar{
+    padding:5px;
+    padding-left: 15px;
+    font-size: 18px;
     border: 1px solid black;
     border-radius: 20px;
     height: 40px;
     width: 500px;
-    margin-bottom: 50px;;
+    margin-bottom: 50px;
 }
+
+::placeholder{
+    color:black;
+    font-family: "sans-medium";   
+}
+
+
+.input{
+    padding-top: 30px;
+}
+
+
+button{
+    background-color:white;
+    border: 0px;
+}
+
+
+
+main{
+    
+}
+
+
+
+/* ==========data========== */
+
+
+
+
+/* ----------location---------- */
 
 .locationTempContainer{
     margin-bottom: 50px;
@@ -47,13 +85,6 @@ article{
     margin-bottom: 20px;
 }
 
-button{
-    background-color:white;
-    border: 0px;
-}
-
-
-/* ==========data========== */
 
 
 /* ----------temperature---------- */
@@ -81,6 +112,8 @@ button{
     font-size: 15px;
 }
 
+/* ----------humidity---------- */
+
 .humidity{
     font-size: 15px;
 }
@@ -92,6 +125,8 @@ button{
 .humidity::before{
     content:"humidity "
 }
+
+/* ----------windspeed---------- */
 
 .windSpeed{
     font-size: 15px;
@@ -105,11 +140,17 @@ button{
     content:" Km/h"
 }
 
-
+/* ----------searchbar---------- */
 
 .searchBar{
     padding:5px;
     padding-left: 15px;
-    font-size: 15px;
+    font-size: 18px;
     
+    
+}
+
+::placeholder{
+    color:black;
+    font-family: "sans-medium";   
 }

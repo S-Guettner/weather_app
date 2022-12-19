@@ -63,3 +63,15 @@ fetch(`http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${cityName}&aqi
     .then(data => document.querySelector(".windSpeed").innerHTML=(data["current"].wind_kph));
 
 
+
+
+
+
+
+/* ==========Change Background with input from searchbar========== */
+
+
+let backgroundImage = document.querySelector(".background").style;
+backgroundImage.background = "url(https://source.unsplash.com/random/300×300)"
+
+console.log(backgroundImage);
