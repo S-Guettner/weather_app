@@ -1,4 +1,4 @@
-import{apiKey} from "../git_ignore/api_key.js";
+import{apiKey} from "../../hidden/api_key.js";
 
 /* ----------import apiKey from git ignore Folder---------- */
 
