@@ -72,6 +72,6 @@ fetch(`http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${cityName}&aqi
 
 
 let backgroundImage = document.querySelector(".background").style;
-backgroundImage.background = "url(https://source.unsplash.com/random/300×300)"
+backgroundImage.background = "url(https://source.unsplash.com/random/600×600)"
 
 console.log(backgroundImage);
