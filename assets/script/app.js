@@ -1,4 +1,11 @@
-const apiKey = "52fbfc06f33445f7b8e183116221912";
+import{apiKey} from "../git_ignore/api_key.js";
+
+/* ----------import apiKey from git ignore Folder---------- */
+
+
+
+
+
 
 const cityName = "berlin" 
 
