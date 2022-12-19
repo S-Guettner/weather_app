@@ -71,7 +71,13 @@ fetch(`http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${cityName}&aqi
 /* ==========Change Background with input from searchbar========== */
 
 
+
+    
 let backgroundImage = document.querySelector(".background").style;
-backgroundImage.background = "url(https://source.unsplash.com/random/600×600)"
+backgroundImage.background = `url(https://source.unsplash.com/random/1920×1080/?${cityName})`
+
+
+
+
 
 console.log(backgroundImage);
